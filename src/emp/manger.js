@@ -25,9 +25,12 @@ let payload = {Flight:Flight}
     events.emit('new-flight', payload);
    
 }, 10000)
-// events.on('arrived', newArraive);
+// events.on('new-flight', newArraive);
 // function newArraive(payload) {
-     
+//     setInterval(() => {
+      
 //         console.log(`Manager: we’re greatly thankful for the amazing flight, ${payload.Flight.Details.pilot}`);
 //         console.log("-----------------------------------------")
+//       }, 10000)
+    
 // }

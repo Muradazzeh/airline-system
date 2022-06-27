@@ -4,14 +4,14 @@ const {faker} = require('@faker-js/faker');
 events.once('new-flight', newflight)
 function newflight(payload){
    
-setInterval(() => {
+    setTimeout(() => {
 
     payload.Flight.event='took-off';
   console.log(`Pilot: flight with ID ${payload.Flight.Details.flightID} took-off`)
       events.emit('took_off', payload);
       
   }, 4000)
-setInterval(() => {
+  setTimeout(() => {
 //     let  Flight= {
 //           event: 'took_off',
 //           time:faker.date.future () ,
